@@ -6,10 +6,8 @@ import DataPost from './components/DataPost';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <DataFetch></DataFetch>
         <DataPost></DataPost>
-      </header>
     </div>
   );
 }
