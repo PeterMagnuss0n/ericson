@@ -1,10 +1,8 @@
-body {
-  background: #ebe9e5;
-}
 .Content {
   display: flex;
   justify-content: center;
   min-width: 1450px;
+  margin-top: 4rem;
 }
 
 .Grid {
