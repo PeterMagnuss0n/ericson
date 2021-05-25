@@ -1,7 +1,3 @@
-img {
-    height: 250px;
-    width: 440px;
-}
 
 .image-holder {
     border: 1px solid white;
@@ -17,13 +13,44 @@ img {
     box-shadow: 1px 2px #dcdcdc
 }
 
+.image-content {
+    width: 430px;
+    margin: 1rem;
+    position: relative;
+
+}
+
+img {
+    height: 250px;
+    width: 440px;
+    display: block;
+}
+
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 93%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-content:hover .overlay {
+    opacity: 1;
+  }
+
+/* .image-content:hover img {
+    opacity: 0.3;
+} */
+
 .flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.image-content {
-    width: 430px;
-    margin: 1rem;
 }
