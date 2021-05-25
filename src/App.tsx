@@ -6,10 +6,18 @@ import Images from './components/Images';
 
 function App() {
   return (
-    <div className="App">
-        <DataFetch></DataFetch>
-        <DataPost></DataPost>
-        <Images></Images>
+    <div className="Content">
+      <div className="Grid">
+        <div className="item-a">
+          <DataFetch></DataFetch>
+        </div>
+        <div className="item-b">
+          <DataPost></DataPost>
+        </div>
+        <div className="item-c">
+          <Images></Images>
+        </div>
+      </div>
     </div>
   );
 }

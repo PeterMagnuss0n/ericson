@@ -20,6 +20,7 @@ img {
 .flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .image-content {

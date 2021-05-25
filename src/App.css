@@ -1,8 +1,32 @@
 body {
   background: #ebe9e5;
 }
-.App {
-  text-align: center;
+.Content {
+
 }
+
+.Grid {
+  text-align: center;
+  display: grid;
+    grid-template-columns: 350px 350px 50px 350px 350px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "post post . fetch fetch"
+        "image-holder image-holder image-holder image-holder image-holder";
+}
+
+.item-a {
+  grid-area: fetch;
+  margin-top: 5rem;
+}
+
+.item-b {
+  grid-area: post;
+}
+
+.item-c {
+  grid-area: image-holder;
+}
+
 
 
