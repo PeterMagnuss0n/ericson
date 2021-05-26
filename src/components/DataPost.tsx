@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/post.css';
+import axios from 'axios';
 
 
 const DataFetch = ({showFetch}: any) => {
@@ -13,14 +14,8 @@ const DataFetch = ({showFetch}: any) => {
         e.preventDefault();
 
         const data = { title, body };
-        const requestOptions = {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data)
-        };
 
-        fetch("https://jsonplaceholder.typicode.com/posts", requestOptions)
-            .then(response => response.json())
+        axios.post("https://jsonplaceholder.typicode.com/posts", {data})
             .then(res => console.log(res));
     };
     return (
