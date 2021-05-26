@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/post.css';
 
 
-function DataFetch() {
+const DataFetch = ({showFetch}: any) => {
     const [title, setTitle] = useState<any>("");
     const [body, setBody] = useState<any>("");
   
@@ -32,6 +32,7 @@ function DataFetch() {
                     <button className="post-button fields" type="submit" onClick={handlePost}>Skapa inlägg</button>
                 </div>
             </form>
+            <button className="post-button fields show-button" onClick={showFetch}>Visa hämta inlägg</button>
         </div>
     )
 }

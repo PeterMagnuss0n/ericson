@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import '../styles/fetch.css';
 
-function DataFetch() {
+const DataFetch = ({showFetch}: any) => {
     const [post, setPost] = useState<any>({})
     const [id, setId] = useState<any | null>("")
     const [idRequest, setIdRequest] = useState<any>("")
@@ -22,7 +22,7 @@ function DataFetch() {
             })
     }, [idRequest])
     return (
-        <div className="holder">
+        <div className={`holder${showFetch&&"show"}`}>
             <div className="post">
                 <div className="get-post">
                     <input className="input-field" placeholder="Skriv ID 1-100" type="text" value={id} onChange={e => setId(e.target.value)} />

@@ -70,3 +70,8 @@
     .post-button:hover{
         background-color: #d35b2b;
     }
+
+.show-button {
+    width: 400px;
+    margin-bottom: 1rem;
+}
